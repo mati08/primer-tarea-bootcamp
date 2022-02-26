@@ -1,0 +1,79 @@
+:root{
+    --tamaño-subtitulos:3rem;;
+    --tamaño-parrafos:2rem;
+    --color-parrafos:#606060;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    margin:0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+/***** Encabezado y menu de web*****/
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 12rem;
+}
+.title{
+    font-family:'Karla', sans-serif;;
+}
+nav{
+    display: flex;
+    gap: 2rem;
+    padding-top: 2.2rem;
+    
+}
+a{
+    text-decoration: none;
+    color: #6a388b;
+}
+/*****COMIENZO DE CONTENIDO PRINCIPAL*****/
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3rem;
+    padding-bottom: 10rem;
+}
+.main-content{
+    width: 54rem;
+    padding: 0rem 0 0 6rem;
+    font-size: var(--tamaño-parrafos);
+    color: var(--color-parrafos);
+}
+.subtitulo{
+    font-size: var(--tamaño-subtitulos);
+    color: black;
+}
+.text{
+    text-align: justify-all;
+}
+.img{
+    width: 35rem;
+    border: 0.3rem dotted black;
+    margin:0.5rem 1rem 0rem 2rem;
+    border-radius: 50%;
+}
+.boton{
+    height: 55px;
+    width: 20rem;
+    color: aliceblue;
+    background-color: #181717;
+    border-radius: 16px;
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+}
+/*Sección de experiencia y proyectos*/
+.subtitulo:nth-child(2){
+    margin:1rem;
+    color: aqua;
+}
+.container{
+    height: 42rem;
+    width: 112rem;
+    border: 0.3rem solid blue;
+}
