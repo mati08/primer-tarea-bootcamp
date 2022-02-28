@@ -2,6 +2,7 @@
     --tamaño-subtitulos:3rem;;
     --tamaño-parrafos:2rem;
     --color-parrafos:#606060;
+    --boton-info:#9062af;
 }
 
 html{
@@ -31,6 +32,7 @@ nav{
 a{
     text-decoration: none;
     color: #6a388b;
+    font-size: 25px;
 }
 /*****COMIENZO DE CONTENIDO PRINCIPAL*****/
 main{
@@ -38,6 +40,9 @@ main{
     flex-wrap: nowrap;
     gap: 3rem;
     padding-bottom: 10rem;
+    margin: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
 }
 .main-content{
     width: 54rem;
@@ -46,10 +51,12 @@ main{
     color: var(--color-parrafos);
 }
 .subtitulo{
+    font-size: 100px;
+    line-height: 48px;
     font-size: var(--tamaño-subtitulos);
     color: black;
 }
-.text{
+p{
     text-align: justify-all;
 }
 .img{
@@ -62,18 +69,70 @@ main{
     height: 55px;
     width: 20rem;
     color: aliceblue;
-    background-color: #181717;
     border-radius: 16px;
     margin: 0.5rem;
-    margin-bottom: 1rem;
+    border-radius: 40px;
+    box-shadow:  15px 15px 29px #969696,-15px -15px 29px #ffffff;
+    background-color: #181717;
 }
 /*Sección de experiencia y proyectos*/
-.subtitulo:nth-child(2){
-    margin:1rem;
-    color: aqua;
+.proyects-title{
+    margin: 4rem 3rem;
 }
 .container{
-    height: 42rem;
-    width: 112rem;
-    border: 0.3rem solid blue;
+    display: flex;
+    flex-direction: row;
+    height: 35rem;
+    width: 100rem;
+    border-bottom: 1.5px double black;
+    
+    margin: 1rem auto;
+}
+.main-content{
+    width: 35rem;
+    height: 15rem;
+}
+.topic{
+    font-size: 2.8rem;
+    color: black;
+}
+.text{
+    font-size: 14px;
+}
+.info{
+    margin-top: 2rem;
+    height: 35px;
+    font-size: 15px;
+}
+.img-explain{
+    height: 30rem;
+    width: 50rem;
+    margin: 3rem;
+    background-image: url(../assets/img\ for\ example.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.web > a{
+    text-decoration: underline;
+}
+
+
+footer{
+    border-top: #6a388b solid 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0rem 12rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.me{
+    display: flex;
+    flex-direction: row;
+}
+.arrow{
+    padding: 1rem;
+    margin: 1rem;
+    margin-left: 0.5;
+    margin-right: 3rem;
 }
